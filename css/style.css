@@ -51,13 +51,14 @@ div.sushi > div.label {color: #000; background-color: #ffff00;}
 
 /* Adaptive - Tablet */
 @media (min-width:768px) and (max-width:991px) {
-    div.chicken {width: 49%; margin:0;}
-    div.beef {width: 47%; margin-left:3%;}
-    div.sushi {width: 99%; margin:3% 0;}
+    div.chicken {width: 48%; margin:0 2% 2% 0;}
+    div.beef {width: 48%; margin:0 0 2% 2%;} 
+    /* div.chicken, div.beef {width: 48%; margin:0 1%;} */
+    div.sushi {width: 100%; margin:2% 0;}
 }
 
 /* Adaptive - PC */
 @media (min-width:992px) {
-    div.chicken, div.beef, div.sushi {width:31%; margin:0 1%;}
+    div.chicken, div.beef, div.sushi {width:31.333%; margin:0 1%;}
 }
 
