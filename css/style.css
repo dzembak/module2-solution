@@ -45,6 +45,7 @@ div.sushi > div.label {color: #000; background-color: #ffff00;}
 
 /* Adaptive - Smartphone */
 @media (max-width:767px) {
+    h1 {padding:.5em 0;}
     div.chicken, div.beef, div.sushi {width:90%; margin:2% 5%;}
     div.content > div > p {margin: 2em 1em 1em 1em;}
 }
