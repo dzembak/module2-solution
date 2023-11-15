@@ -52,6 +52,7 @@ div.sushi > div.label {color: #000; background-color: #ffff00;}
 
 /* Adaptive - Tablet */
 @media (min-width:768px) and (max-width:991px) {
+    h1 {padding:.75em 0;}
     div.chicken {width: 48%; margin:0 2% 2% 0;}
     div.beef {width: 48%; margin:0 0 2% 2%;} 
     /* div.chicken, div.beef {width: 48%; margin:0 1%;} */
