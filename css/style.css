@@ -1,0 +1,62 @@
+* {box-sizing:border-box;}
+
+html {background-color: white; color: black; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+html, body {margin: 0; padding: 0;}
+
+h1 {color:brown; text-align:center; padding:0.5em 0; margin:0;}
+
+div.content {padding: 10px;}
+
+div.content > div {
+    background-color: #ffffcc;
+    border: 2px solid brown;
+    padding: 0;
+    float: left;
+    box-shadow: 5px 5px 10px 1px rgba(255, 145, 0, 0.2);
+}
+
+div.content > div > div.label {
+    outline: 1px solid brown;
+    padding: 3px 10px;
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 110%;
+    text-transform: capitalize;
+    float: right;
+    min-width: 25%;
+}
+
+div.content > div > p {
+    margin: 2em 2em 1em 2em;
+    line-height: 1.5;
+}
+
+div.content > div > p::first-letter {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: brown;
+ }
+
+div.chicken > div.label {color: #000; background-color: pink;}
+div.beef > div.label {color: #fff; background-color: coral;}
+div.sushi > div.label {color: #000; background-color: #ffff00;}
+
+/* Adaptive - Smartphone */
+@media (max-width:767px) {
+    div.chicken, div.beef, div.sushi {width: 90%; margin:2% 5%;}
+    div.content > div > p {margin: 2em 1em 1em 1em;}
+}
+
+/* Adaptive - Tablet */
+@media (min-width:768px) and (max-width:991px) {
+    div.chicken {width: 49%; margin:0;}
+    div.beef {width: 47%; margin-left:3%;}
+    div.sushi {width: 99%; margin:3% 0;}
+}
+
+/* Adaptive - PC */
+@media (min-width:992px) {
+    div.chicken, div.beef, div.sushi {width:32%; margin-left:1%;}
+}
+
